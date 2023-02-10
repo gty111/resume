@@ -1,52 +1,42 @@
 % !TEX program = xelatex
 
 \documentclass{resume}
-%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Bin Yuan}
+\name{TIAN-YU GUO  郭天宇}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{guoty9@mail2.sysu.edu.cn} \textperiodcentered\ 
+  \homepage[``homepage'']{https://gty111.github.io/} \textperiodcentered\ 
+  \github[``gty111'']{https://github.com/gty111}
+  }
 
 \section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
+\datedsubsection{\textbf{Sun Yat-sen University}, Guangzhou, China}{2022 -- 2025 (expected)}
+\textit{Master student} in Computer Science (CS)
+\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2018 -- 2022}
+\textit{B.S.} in Computer Science (CS)
 
 \section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
-\begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
-\end{itemize}
+\datedsubsection{\textbf{Teaching Assistant of “SYSU-DCS3013 : Computer Architecture”}}{2022}
+Release \href{https://arcsysu.github.io/SYSU-ARCH/}{``SYSU-ARCH LAB''} which focuses on simulators.
 
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
-\begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
-\end{itemize}
 
-\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
-\role{\LaTeX, Maintainer}{Individual Projects}
-An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
-\begin{itemize}
-  \item Easy to be further customized or extended
-  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-  \item FontAwesome 4.5.0 support
-\end{itemize}
+\datedsubsection{\textbf{Design PTX-EMU}}{2022}
+\href{https://github.com/gty111/PTX-EMU}{``PTX-EMU''} is an emulator for NVIDIA PTX. \\You can use it to generate image by simulating rendering program.
+
+
+\datedsubsection{\textbf{Design CNN framework on CPU and GPU}}{2022}
+\href{https://github.com/gty111/ConvNN/tree/cudnn}{``CovNN''} is a CNN framework support on CPU and GPU. \\ To validate its availability, CNNs are built to solve MNIST or CIFAR-10 training on GPU and achieve 98\% or 70\% accuracy respectively.
+
+
+\datedsubsection{\textbf{Design GEMM by WMMA}}{2022}
+\href{https://github.com/gty111/GEMM_WMMA}{``GEMM WMMA''} is an implementation of GEMM by CUDA WMMA and it can behave better than cutlass' basic GEMM at most situations.
+ 
 
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
@@ -57,21 +47,17 @@ An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
 
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: C == Python > C++ > Java
-  \item Platform: Linux
-  \item Development: Web, xxx
+  \item Programming Languages: C, C++, CUDA, Python, Java  
+  \item English: CET6(517/750)
 \end{itemize}
 
 \section{\faHeartO\ Honors and Awards}
-\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
-\datedline{Other awards}{2015}
+\datedline{Top 4.2\% nationwide | Top 2.9\% worldwide in \href{https://leetcode.cn/u/gtyinstinctx/}{``leetcode contest''}}{2023}
+\datedline{The Second Prize Scholarship in SYSU}{2022-2023}
+\datedline{The Second Prize Scholarship in XDU}{2018-2019, 2019-2020, 2020-2021}
+\datedline{Top 7.58\% in CCF CSP}{2021}
+\datedline{Provincial first prize of CUMCM}{2020}
 
-\section{\faInfo\ Miscellaneous}
-\begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
-\end{itemize}
 
 %% Reference
 %\newpage
